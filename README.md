@@ -52,6 +52,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 ## Estructura Empleada
-A continuacion detallamos la estructura empleada que corresponde al freamwork Angular
+A continuacion detallamos la estructura empleada que corresponde al freamwork Angular.
 
-Debo insertar la imagen 
+<img src="img/arquitectura.png">
+
+Adicional a esto, este front-end junto al repositorio de [back-end](https://github.com/josemasster/PruebaTecnica-Backend) conforman la solución de la prueba.
+
+A continuacion se muestra la arquitectura global
+
+<img src="img/allArquitectura.png">
