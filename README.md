@@ -2,6 +2,8 @@
 
 Este repositorio corresponde a la parte visual Front-end de la prueba tecnica agenda de contacto.
 
+**Evidencia Funcionalidad:** https://www.youtube.com/watch?v=feRjORYGb_A
+
 **Enunciado:** se desea crear una agenda personal. Debe permitirse registrar
 contactos, incluyendo el nombre completo, el número de documento, la
 dirección, número telefónico de contacto, dirección de correo electrónico.
@@ -13,9 +15,9 @@ eliminación de estos.
 ## Stack Tecnologico
 
 Este projecto esta desarrollado con las siguietes tecnologias: 
-
+[Node.js](https://nodejs.org/)
 [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
-[Bootrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) version 5.0.3
+[Boostrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) version 5.0.3
 
 ## Variables de Entorno
 
@@ -26,6 +28,25 @@ Este projecto esta desarrollado con las siguietes tecnologias:
 ## Ejecucion Proyecto
 
 Acontinuacion detallremos las instrucciones para la ejecucion del proyecto.
+
+### Paso a Paso
+
+**Instala las Dependencias:**
+
+Ejecuta el siguiente comando para instalar todas las dependencias del proyecto:
+
+```shell
+npm install
+```
+
+**Arranca el Servidor de Desarrollo:**
+
+Para iniciar un servidor de desarrollo y ver tu aplicación en el navegador, ejecuta el siguiente comando:
+
+```shell
+npm serve -o
+```
+
 
 ### Development server
 
