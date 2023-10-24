@@ -1,0 +1,112 @@
+<div class="container mt-4 mb-">
+  <div class="card">
+    <div class="card-body">
+      <span class="h3">Agenda</span>
+      <button id="button" class="btn btn-dark btn-lg" routerLink="/createContact">Add</button>
+      <div class="row mt-4">
+        <div class="col" *ngFor="let contact of data">
+          <div id="cardserie" class="card mt-4">
+            <div class="card-body">
+              <h5>Identificador: {{ contact.ID }}</h5>
+              <p>Nombre: {{ contact.NombreCompleto }}:</p>
+              <p>Documento: {{ contact.NumeroDocumento }}</p>
+              <p>Dirección: {{ contact.Direccion }}</p>
+              <p>Numero: {{ contact.PhoneNumber }}</p>
+              <p>Email: {{ contact.Email }}</p>
+              <button id="botonc" class="btn btn-primary btn-lg ">Update</button>
+              <button id="botonc" class="btn btn-danger btn-lg" (click)="DeleteContactData(contact.ID)">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container mt-4">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Crear Contacto</h2>
+          <form>
+
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">Nombre Completo</label>
+                <input type="email" class="form-control" id="email" placeholder="Pepito ... ... ... ..."
+                  #NombreCompleto>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Numero de Documento</label>
+                <input type="text" class="form-control" id="password" placeholder="123456789" #NumeroDocumento>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Direccion</label>
+                <input type="text" class="form-control" id="password" placeholder="65-6" #Direccion>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Numero</label>
+                <input type="text" class="form-control" id="password" placeholder="3201456985" #PhoneNumber>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" id="password" placeholder="...@gmail.com" #Email>
+              </div>
+
+              <div class="text-center">
+                <button type="button" class="btn btn-primary"
+                  (click)="CreateContactData(NombreCompleto.value, NumeroDocumento.value, Direccion.value, PhoneNumber.value, Email.value)">Agregar
+                  Contacto</button>
+              </div>
+            </form>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Editar Contacto</h2>
+          <form>
+
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">Identificador:</label>
+                <input type="number" class="form-control" id="password" placeholder="Pepito ... ... ... ... " #ID>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="password" placeholder="Pepito ... ... ... ... " #UNombreCompleto>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Numero de Documento</label>
+                <input type="text" class="form-control" id="password" placeholder="123456789" #UNumeroDocumento>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Direccion</label>
+                <input type="text" class="form-control" id="password" placeholder="65-6" #UDireccion>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">PhoneNumber</label>
+                <input type="text" class="form-control" id="password" placeholder="3201456985" #UPhoneNumber>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" id="password" placeholder="...@gmail.com" #UEmail>
+              </div>
+
+              <div class="text-center">
+                <button type="button" class="btn btn-primary"
+                  (click)="UpdateContactData(  ID.value, UNombreCompleto.value, UNumeroDocumento.value, UDireccion.value, UPhoneNumber.value, UEmail.value)">Agregar
+                  Contacto</button>
+              </div>
+            </form>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

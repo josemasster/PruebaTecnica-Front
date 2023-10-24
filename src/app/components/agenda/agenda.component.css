@@ -1,0 +1,15 @@
+#test{
+    background-color: red;
+}
+#button{
+
+    float: right;
+}
+#botonc{
+    margin-bottom: 10px;
+    width: 100%;
+    float: left;
+}
+#p{
+    display: none;
+}
