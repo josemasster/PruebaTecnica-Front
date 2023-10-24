@@ -18,6 +18,7 @@ Este projecto esta desarrollado con las siguietes tecnologias:
 [Bootrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) version 5.0.3
 
 ## Variables de Entorno
+
 ```shell
 # No se definio variable de entorno
 ```
